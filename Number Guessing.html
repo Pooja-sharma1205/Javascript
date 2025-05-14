@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+</head>
+<body>
+  
+    <input type="text" id="inp">
+    <button id="add">Submit</button>
+
+<script>
+    var userName=2;
+    document.getElementById("add").onclick=function(){
+        userName=document.getElementById("inp").value
+        var answer=Math.floor(Math.random()*5)+1
+        if(userName==answer){ 
+            alert("you won!")
+        }
+        else{
+            alert("Try again!")
+        }
+    }
+</script>
+</body>
+</html>
